@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0:00:00"
+        android:textSize="70sp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:id="@+id/text"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop"
+        android:src="@drawable/baseline_stop_24"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="250dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="onStop"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:src="@drawable/baseline_play_arrow_24"
+        android:layout_marginLeft="175dp"
+        android:layout_marginBottom="250dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="onStart"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:src="@drawable/baseline_replay_24"
+        android:layout_marginLeft="295dp"
+        android:layout_marginBottom="250dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="onReset"/>
+
+</RelativeLayout>
